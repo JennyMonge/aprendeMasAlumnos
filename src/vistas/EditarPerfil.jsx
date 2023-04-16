@@ -8,50 +8,50 @@ function EditarPerfil() {
       <Aside />
       <div className="w-full">
         <Nav />
-        <div class="ml-16 px-6 pt-6 2xl:container">
-          <div class="grid gap-6 md:grid-cols-3">
-            <div class="md:col-span-2 lg:col-span-1">
-              <div class="h-full py-8 px-6 space-y-6 rounded-xl border border-gray-200 bg-white">
-                <h1 class=" font-bold text-center  text-lg lg:text-3xl bg-gradient-to-br from-white via-white/50 to-transparent bg-clip-text text-aFuerte">
-                  Editar Perfil
-                </h1>
-                <div>
-                  <label
-                    for="dropzone-file"
-                    class="mx-auto cursor-pointer flex w-80 h-800 max-w-lg flex-col items-center rounded-xl border-2 border-dashed border-blue-400 bg-white p-6 text-center"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-10 w-10 text-blue-500"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      stroke-width="2"
+        <div class="ml-16 px-6 pt-6 2xl:container my-4">
+          <form action="">
+            <div class="grid gap-6 md:grid-cols-3">
+              <div class="md:col-span-2 lg:col-span-1">
+                <div class="h-full py-8 px-6 space-y-6 rounded-xl border border-gray-200 bg-white">
+                  <h1 class=" font-bold text-center  text-lg lg:text-3xl bg-gradient-to-br from-white via-white/50 to-transparent bg-clip-text text-aFuerte">
+                    Editar Perfil
+                  </h1>
+                  <div>
+                    <label
+                      for="dropzone-file"
+                      class="mx-auto cursor-pointer flex w-80 h-800 max-w-lg flex-col items-center rounded-xl border-2 border-dashed border-blue-400 bg-white p-6 text-center"
                     >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"
-                      />
-                    </svg>
-                    <h2 class="mt-4 text-xl font-medium text-gray-700 tracking-wide">
-                      Payment File
-                    </h2>
-                    <p class="mt-2 text-gray-500 tracking-wide">
-                      Upload or darg & drop your file SVG, PNG, JPG or GIF.{" "}
-                    </p>
-                    <input id="dropzone-file" type="file" class="hidden" />
-                  </label>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-10 w-10 text-blue-500"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"
+                        />
+                      </svg>
+                      <h2 class="mt-4 text-xl font-medium text-gray-700 tracking-wide">
+                        Payment File
+                      </h2>
+                      <p class="mt-2 text-gray-500 tracking-wide">
+                        Upload or darg & drop your file SVG, PNG, JPG or GIF.{" "}
+                      </p>
+                      <input id="dropzone-file" type="file" class="hidden" />
+                    </label>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="md:col-span-2 lg:col-span-2">
-              <div class="h-full py-6 px-6 rounded-xl border border-gray-200 bg-white">
-                <h1 class=" font-bold  text-lg lg:text-3xl bg-gradient-to-br from-white via-white/50 to-transparent bg-clip-text text-aFuerte">
-                  Tus Datos
-                </h1>
-                <div class="my-8">
-                  <form>
+              <div class="md:col-span-2 lg:col-span-2">
+                <div class="h-full py-6 px-6 rounded-xl border border-gray-200 bg-white">
+                  <h1 class=" font-bold  text-lg lg:text-3xl bg-gradient-to-br from-white via-white/50 to-transparent bg-clip-text text-aFuerte">
+                    Tus Datos
+                  </h1>
+                  <div class="my-8">
                     <div class="grid gap-6 mb-6 md:grid-cols-2">
                       <div>
                         <label
@@ -249,11 +249,11 @@ function EditarPerfil() {
                     >
                       Guardar Cambios
                     </button>
-                  </form>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </div>
