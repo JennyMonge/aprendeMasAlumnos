@@ -6,12 +6,13 @@ function Nosotros() {
     <>
       <div >
         <Navbar/>
+        <div >
         <div class="w-full pl-5 lg:pl-2 mb-4 mt-4">
           <h1 class="text-6xl font-extrabold text-center texto-color  "> Nosotros </h1>
         </div>
         <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-            <img class="object-cover object-center  bg-blue-950 p-8 " alt="hero" src="https://img.freepik.com/fotos-premium/personas-creativas-multirraciales-oficina-moderna-grupo-jovenes-empresarios-jefe-senior-estan-trabajando-junto-computadora-portatil-tableta-telefono-inteligente-computadora-portatil-graficos-equipo-exitoso-coworking_452079-107.jpg?w=2000" />
+            <img class="object-cover object-center  bg-blue-900 p-8 " alt="hero" src="https://img.freepik.com/fotos-premium/personas-creativas-multirraciales-oficina-moderna-grupo-jovenes-empresarios-jefe-senior-estan-trabajando-junto-computadora-portatil-tableta-telefono-inteligente-computadora-portatil-graficos-equipo-exitoso-coworking_452079-107.jpg?w=2000" />
           </div>
           <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
             <p class="mb-8 leading-relaxed ">Somos una aplicación ha sido creada con el objetivo de brindar a los estudiantes una herramienta útil y
@@ -26,9 +27,9 @@ function Nosotros() {
         <div class="container ml-auto mr-auto flex flex-wrap items-start mt-8 ">
           <div class="w-full md:w-1/2 lg:w-1/3 pl-5 pr-5 mb-5 lg:pl-2 lg:pr-2">
             <div
-              class=" border-solid border-4 border-blue-950 bg-white rounded-lg m-h-64 p-2 transform hover:translate-y-2 hover:shadow-xl transition duration-300">
+              class=" border-solid border-4 border-blue-900 bg-white rounded-lg m-h-64 p-2 transform hover:translate-y-2 hover:shadow-xl transition duration-300">
               <figure class="mb-2">
-                <img  src="https://deproconsultores.com/wp-content/uploads/2016/12/Art-173-programa_de_administracion_por_objetivos-2-1.jpg" alt=""class="h-64 ml-auto mr-auto rounded-lg "  />
+                <img  src="https://deproconsultores.com/wp-content/uploads/2016/12/Art-173-programa_de_administracion_por_objetivos-2-1.jpg" alt=""class="h-64 ml-auto mr-auto rounded-full "  />
               </figure>
 
               <div class="rounded-lg p-4 flex flex-col ">
@@ -49,7 +50,7 @@ function Nosotros() {
           </div>
           <div class="w-full md:w-1/2 lg:w-1/3 pl-5 pr-5 mb-5 lg:pl-2 lg:pr-2">
             <div
-              class=" border-solid border-4 border-blue-950 bg-white rounded-lg m-h-64 p-2 transform hover:translate-y-2 hover:shadow-xl transition duration-300">
+              class=" border-solid border-4 border-blue-900 bg-white rounded-lg m-h-64 p-2 transform hover:translate-y-2 hover:shadow-xl transition duration-300">
               <figure class="mb-2">
                 <img src="https://www.aprendemas.com/es/blog/images/2021/03/becas_master_universidad.jpg"
                   alt="" class="h-64 ml-auto mr-auto rounded-lg " />
@@ -72,7 +73,7 @@ function Nosotros() {
           </div>
           <div class="w-full md:w-1/2 lg:w-1/3 pl-5 pr-5 mb-5 lg:pl-2 lg:pr-2">
             <div
-              class=" border-solid border-4 border-blue-950 bg-white rounded-lg m-h-64 p-2 transform hover:translate-y-2 hover:shadow-xl transition duration-300">
+              class=" border-solid border-4 border-blue-900 bg-white rounded-lg m-h-64 p-2 transform hover:translate-y-2 hover:shadow-xl transition duration-300">
               <figure class="mb-2">
                 <img src="https://1.bp.blogspot.com/--NPDe69M4hg/W7EiOWOZCYI/AAAAAAAAAVc/YR8eSJg9vqIzcKRXPfRM3BvzWZXkj0EOACLcBGAs/s1600/sesiones-de-charla-o-psicoterapia.jpg"
                   alt="" class="h-64 ml-auto mr-auto rounded-lg" />
@@ -94,6 +95,7 @@ function Nosotros() {
             </div>
           </div>
         </div>
+      </div>
         <Footer/>
       </div>
     </>

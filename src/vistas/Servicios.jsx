@@ -23,7 +23,7 @@ function Servicios() {
                 <div class="container ml-auto mr-auto flex flex-wrap items-start mt-8">
                     <div class="w-full md:w-1/2 lg:w-1/3 pl-5 pr-5 mb-5 lg:pl-2 lg:pr-2">
                         <div
-                            class="bg-blue-950 rounded-lg m-h-64 p-2 transform hover:translate-y-2 hover:shadow-xl transition duration-300">
+                            class="bg-aFuerte2 rounded-lg m-h-64 p-2 transform hover:translate-y-2 hover:shadow-xl transition duration-300">
                             <figure class="mb-2">
                                 <img src="https://www.wradio.com.co/resizer/kxTYsJ9DY77rNBaQRFQnasSaJSM=/650x488/filters:format(jpg):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/prisaradioco/WKDPR2RF7NGH5L6OWRXXYG37SY.jpg"
                                     alt="" class="h-64 ml-auto mr-auto rounded-full " />
@@ -43,7 +43,7 @@ function Servicios() {
                     </div>
                     <div class="w-full md:w-1/2 lg:w-1/3 pl-5 pr-5 mb-5 lg:pl-2 lg:pr-2">
                         <div
-                            class="bg-blue-950 rounded-lg m-h-64 p-2 transform hover:translate-y-2 hover:shadow-xl transition duration-300">
+                            class="bg-aFuerte2  rounded-lg m-h-64 p-2 transform hover:translate-y-2 hover:shadow-xl transition duration-300">
                             <figure class="mb-2">
                                 <img src="https://www.onatlas.com/wp-content/uploads/2019/09/rawpixel-653764-unsplash.jpg"
                                     alt="" class="h-64 ml-auto mr-auto rounded-full" />
@@ -63,7 +63,7 @@ function Servicios() {
                     </div>
                     <div class="w-full md:w-1/2 lg:w-1/3 pl-5 pr-5 mb-5 lg:pl-2 lg:pr-2">
                         <div
-                            class="bg-blue-950 rounded-lg m-h-64 p-2 transform hover:translate-y-2 hover:shadow-xl transition duration-300">
+                            class="bg-aFuerte2  rounded-lg m-h-64 p-2 transform hover:translate-y-2 hover:shadow-xl transition duration-300">
                             <figure class="mb-2">
                                 <img src="https://redsocial.rededuca.net/sites/default/files/styles/panopoly_image_original/public/gamificacion.jpg"
                                     alt="" class="h-64 ml-auto mr-auto rounded-full" />
@@ -82,7 +82,7 @@ function Servicios() {
                     <div class="container ml-auto mr-auto flex flex-wrap items-start mt-8">
                         <div class="w-full md:w-1/2 lg:w-1/3 pl-5 pr-5 mb-5 lg:pl-2 lg:pr-2">
                             <div
-                                class="bg-blue-950 rounded-lg m-h-64 p-2 transform hover:translate-y-2 hover:shadow-xl transition duration-300">
+                                class="bg-aFuerte2  rounded-lg m-h-64 p-2 transform hover:translate-y-2 hover:shadow-xl transition duration-300">
                                 <figure class="mb-2">
                                     <img src="https://proest.com/wp-content/uploads/2021/07/construction-planning.jpg" alt=""
                                         class="h-64 ml-auto mr-auto rounded-full" />
@@ -101,7 +101,7 @@ function Servicios() {
                         </div>
                         <div class="w-full md:w-1/2 lg:w-1/3 pl-5 pr-5 mb-5 lg:pl-2 lg:pr-2">
                             <div
-                                class="bg-blue-950 rounded-lg m-h-64 p-2 transform hover:translate-y-2 hover:shadow-xl transition duration-300 ">
+                                class="bg-aFuerte2  rounded-lg m-h-64 p-2 transform hover:translate-y-2 hover:shadow-xl transition duration-300 ">
                                 <figure class="mb-2">
                                     <img src="https://www.lavanguardia.com/files/image_449_220/uploads/2020/09/23/5fad3d19c584d.jpeg"
                                         alt="" class="h-64 ml-auto mr-auto rounded-full" />
@@ -123,7 +123,7 @@ function Servicios() {
                         </div>
                         <div class="w-full md:w-1/2 lg:w-1/3 pl-5 pr-5 mb-5 lg:pl-2 lg:pr-2">
                             <div
-                                class="bg-blue-950 rounded-lg m-h-64 p-2 transform hover:translate-y-2 hover:shadow-xl transition duration-300">
+                                class="bg-aFuerte2  rounded-lg m-h-64 p-2 transform hover:translate-y-2 hover:shadow-xl transition duration-300">
                                 <figure class="mb-2">
                                     <img src="https://www.eluniverso.com/resizer/GpnCsjoIJH10bst_L4gZI1xxuzs=/1104x622/smart/filters:quality(70)/cloudfront-us-east-1.images.arcpublishing.com/eluniverso/NGE2WWASTBEZFKAH2WAUDVI6OE.jpg" alt=""
                                         class="h-64 ml-auto mr-auto rounded-full" />

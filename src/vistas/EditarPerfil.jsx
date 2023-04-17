@@ -1,15 +1,97 @@
-import React from "react";
+import React, { useState } from "react";
 import Aside from "../components/Aside";
 import Nav from "../components/Nav";
 
 function EditarPerfil() {
+  //Estado inicial
+  const datosFormulario = {
+    fotoPerfil: "",
+    nomEditPerfil: "",
+    apellidosEditPerfil: "",
+    emailEditPerfil: "",
+    generoEditPerfil: "",
+    nacimientoEditPerfil: "",
+  };
+  //Estado inicial para alerta
+  const initialStateInput = {
+    input: "",
+    message: "",
+    state: false,
+  };
+  //estado para manejar los valores del formulario
+  const [formulario, setFormulario] = useState(datosFormulario);
+  //Estado para manejar las alertar de validacion
+  const [alerta, setAlerta] = useState([initialStateInput]);
+  //funcion para obtener los de los inputs
+  const ManejarEventoDeInputs = (event) => {
+    //la propiedad target del event nos permitira obtener los valores
+    const name = event.target.name;
+    const value = event.target.value;
+    setFormulario({ ...formulario, [name]: value });
+  };
+
+  const handleEditarPerfil = (e) => {
+    e.preventDefault();
+    //ordenamos los datos para enviarlos a la vadlidacion
+    let verificarInputs = [
+      { nombre: "foto", value: formulario.fotoPerfil },
+      { nombre: "nombre", value: formulario.nomEditPerfil },
+      { nombre: "apellido", value: formulario.apellidosEditPerfil },
+      { nombre: "email", value: formulario.emailEditPerfil },
+      { nombre: "genero", value: formulario.generoEditPerfil },
+      { nombre: "fechaNacimiento", value: formulario.nacimientoEditPerfil },
+    ];
+    //enviamos los datos a la funcion de validacion y recibimos las validadciones
+    const datosValidados = validarInputs(verificarInputs);
+    console.log(datosValidados);
+    //Enviamos las validacione s al estado que se va encargar de mostrarlas en el formulario
+    setAlerta(datosValidados);
+    //obtenemos el total de validaciones
+    const totalValidaciones = datosValidados
+      .filter((input) => input.estado === false)
+      .map((estado) => {
+        return false;
+      });
+    console.log("total validaciones:", totalValidaciones.length);
+    //validacion para enviar los datos al servidor
+    if (totalValidaciones.length >= 6) {
+      console.log("Enviar al servidor");
+    }
+  };
+  const validarInputs = (data) => {
+    console.log(data);
+    let errors = [];
+    const datosDelFormulario = data;
+    datosDelFormulario.map((valorInput) => {
+      switch (valorInput.nombre) {
+        case "nombre": {
+          if (valorInput.value === "" || valorInput.value === null) {
+            errors.push({
+              valorInput: valorInput.nombre,
+              mensaje: "Campo requerido",
+              estado: true,
+            });
+          } else {
+            errors.push({
+              valorInput: valorInput.nombre,
+              mensaje: "",
+              estado: false,
+            });
+          }
+          break;
+        }
+      }
+    });
+    return errors;
+  };
+  console.log(formulario);
   return (
     <div className="flex ">
       <Aside />
       <div className="w-full">
         <Nav />
         <div class="ml-16 px-6 pt-6 2xl:container my-4">
-          <form action="">
+          <form action="" onSubmit={handleEditarPerfil}>
             <div class="grid gap-6 md:grid-cols-3">
               <div class="md:col-span-2 lg:col-span-1">
                 <div class="h-full py-8 px-6 space-y-6 rounded-xl border border-gray-200 bg-white">
@@ -41,7 +123,14 @@ function EditarPerfil() {
                       <p class="mt-2 text-gray-500 tracking-wide">
                         Upload or darg & drop your file SVG, PNG, JPG or GIF.{" "}
                       </p>
-                      <input id="dropzone-file" type="file" class="hidden" />
+                      <input
+                        id="dropzone-file"
+                        type="file"
+                        name="fotoPerfil"
+                        value={formulario.fotoPerfil}
+                        onChange={ManejarEventoDeInputs}
+                        class="hidden"
+                      />
                     </label>
                   </div>
                 </div>
@@ -62,11 +151,27 @@ function EditarPerfil() {
                         </label>
                         <input
                           type="text"
+                          name="nomEditPerfil"
+                          value={formulario.nomEditPerfil}
+                          onChange={ManejarEventoDeInputs}
                           id="first_name"
                           class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                           placeholder="John"
-                          required
+                          
                         />
+                        {alerta
+                          .filter(
+                            (input) =>
+                              input.valorInput == "nombre" &&
+                              input.estado === true
+                          )
+                          .map((message) => (
+                            <div className="">
+                              <span className="text-red-500 ">
+                                {message.mensaje}
+                              </span>
+                            </div>
+                          ))}
                       </div>
                       <div>
                         <label
@@ -76,11 +181,14 @@ function EditarPerfil() {
                           Apellidos
                         </label>
                         <input
+                          name="apellidosEditPerfil"
+                          value={formulario.apellidosEditPerfil}
+                          onChange={ManejarEventoDeInputs}
                           type="text"
                           id="last_name"
                           class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                           placeholder="Doe"
-                          required
+                          
                         />
                       </div>
                       <div>
@@ -107,6 +215,9 @@ function EditarPerfil() {
                           Email
                         </label>
                         <input
+                          name="emailEditPerfil"
+                          value={formulario.emailEditPerfil}
+                          onChange={ManejarEventoDeInputs}
                           type="email"
                           id="email"
                           class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
@@ -128,7 +239,9 @@ function EditarPerfil() {
                               id="inline-radio"
                               type="radio"
                               value=""
-                              name="inline-radio-group"
+                              name="generoEditPerfil"
+                             
+                              onChange={ManejarEventoDeInputs}
                               class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                             />
                             <label
@@ -143,7 +256,9 @@ function EditarPerfil() {
                               id="inline-2-radio"
                               type="radio"
                               value=""
-                              name="inline-radio-group"
+                              name="generoEditPerfil"
+                             
+                              onChange={ManejarEventoDeInputs}
                               class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                             />
                             <label
@@ -163,6 +278,9 @@ function EditarPerfil() {
                           Fecha Nacimiento
                         </label>
                         <input
+                          name="nacimientoEditPerfil"
+                          value={formulario.nacimientoEditPerfil}
+                          onChange={ManejarEventoDeInputs}
                           type="date"
                           id="last_name"
                           class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
