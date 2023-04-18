@@ -22,12 +22,23 @@ function EditarPerfil() {
   const [formulario, setFormulario] = useState(datosFormulario);
   //Estado para manejar las alertar de validacion
   const [alerta, setAlerta] = useState([initialStateInput]);
+  const [respuestaRadio, setRespuestaRadio] = useState(false);
   //funcion para obtener los de los inputs
   const ManejarEventoDeInputs = (event) => {
     //la propiedad target del event nos permitira obtener los valores
     const name = event.target.name;
     const value = event.target.value;
-    setFormulario({ ...formulario, [name]: value });
+    const id = event.target.id;
+
+    if(name === "generoEditPerfil"){
+      const radio = document.getElementById(id);
+      setRespuestaRadio(radio?.checked);
+      formulario.generoEditPerfil = id;
+    }else{
+      setFormulario({...formulario, [name]: value });
+    }
+
+  
   };
 
   const handleEditarPerfil = (e) => {
@@ -54,8 +65,14 @@ function EditarPerfil() {
       });
     console.log("total validaciones:", totalValidaciones.length);
     //validacion para enviar los datos al servidor
-    if (totalValidaciones.length >= 6) {
-      console.log("Enviar al servidor");
+    if (totalValidaciones.length >= 4) {
+      if(respuestaRadio != false){
+        console.log("Enviar al servidor");
+        alert("exito");
+      }else{
+        alert("necesita agregar un genero")
+      }
+      
     }
   };
   const validarInputs = (data) => {
@@ -64,7 +81,7 @@ function EditarPerfil() {
     const datosDelFormulario = data;
     datosDelFormulario.map((valorInput) => {
       switch (valorInput.nombre) {
-        case "nombre": {
+        case "foto": {
           if (valorInput.value === "" || valorInput.value === null) {
             errors.push({
               valorInput: valorInput.nombre,
@@ -77,6 +94,54 @@ function EditarPerfil() {
               mensaje: "",
               estado: false,
             });
+          }
+          break;
+        }
+        case 'nombre': {
+          if(valorInput.value === '' || valorInput.value === null){
+            errors.push({
+              valorInput:valorInput.nombre,
+              mensaje: 'Campo requerido',
+              estado: true
+            });
+          }else{
+            errors.push({
+              valorInput: valorInput.nombre,
+              mensaje: '',
+              estado:false
+            })
+          }
+          break;
+        }
+        case 'apellido': {
+          if(valorInput.value === '' || valorInput.value === null){
+            errors.push({
+              valorInput:valorInput.nombre,
+              mensaje: 'Campo requerido',
+              estado: true
+            });
+          }else{
+            errors.push({
+              valorInput: valorInput.nombre,
+              mensaje: '',
+              estado:false
+            })
+          }
+          break;
+        }
+        case 'email': {
+          if(valorInput.value === '' || valorInput.value === null){
+            errors.push({
+              valorInput:valorInput.nombre,
+              mensaje: 'Campo requerido',
+              estado: true
+            });
+          }else{
+            errors.push({
+              valorInput: valorInput.nombre,
+              mensaje: '',
+              estado:false
+            })
           }
           break;
         }
@@ -131,6 +196,13 @@ function EditarPerfil() {
                         onChange={ManejarEventoDeInputs}
                         class="hidden"
                       />
+                      {
+                  alerta.filter(input => input.valorInput == "foto" && input.estado === true).map(message => (
+                    <div className="">
+                      <span className="text-red-500 ">{message.mensaje}</span>
+                    </div>
+                  ))
+                }
                     </label>
                   </div>
                 </div>
@@ -190,6 +262,13 @@ function EditarPerfil() {
                           placeholder="Doe"
                           
                         />
+                        {
+                  alerta.filter(input => input.valorInput == "apellido" && input.estado === true).map(message => (
+                    <div className="">
+                      <span className="text-red-500 ">{message.mensaje}</span>
+                    </div>
+                  ))
+                }
                       </div>
                       <div>
                         <label
@@ -222,8 +301,15 @@ function EditarPerfil() {
                           id="email"
                           class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                           placeholder="john.doe@company.com"
-                          required
+                          
                         />
+                        {
+                  alerta.filter(input => input.valorInput == "email" && input.estado === true).map(message => (
+                    <div className="">
+                      <span className="text-red-500 ">{message.mensaje}</span>
+                    </div>
+                  ))
+                }
                       </div>
                       <div>
                         <label
@@ -236,7 +322,7 @@ function EditarPerfil() {
                         <div class="flex">
                           <div class="flex items-center mr-4">
                             <input
-                              id="inline-radio"
+                              id="masculino"
                               type="radio"
                               value=""
                               name="generoEditPerfil"
@@ -253,7 +339,7 @@ function EditarPerfil() {
                           </div>
                           <div class="flex items-center mr-4">
                             <input
-                              id="inline-2-radio"
+                              id="femenino"
                               type="radio"
                               value=""
                               name="generoEditPerfil"
@@ -285,7 +371,7 @@ function EditarPerfil() {
                           id="last_name"
                           class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                           placeholder="Doe"
-                          required
+                          
                         />
                       </div>
                     </div>
