@@ -27,8 +27,7 @@ export const Carrousel = () => {
                 </h1>
 
                 <p class="mt-4 max-w-lg sm:text-xl sm:leading-relaxed">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Nesciunt illo tenetur fuga ducimus numquam ea!
+                Es una aplicación donde puedes encontrar asignaturas desde tercer ciclo hasta bachillerato, donde se prueba tu nivel de conocimiento con un cuestionario, al completar cada nivel se te premia con una nota por completarlo.
                 </p>
 
                 <div class="mt-8 flex flex-wrap gap-4 text-center">
@@ -36,14 +35,14 @@ export const Carrousel = () => {
                     href="#"
                     class="block w-full rounded bg-aFuerte4 px-12 py-3 text-sm font-medium text-white shadow hover:bg-aFuerte3 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
                   >
-                    Get Started
+                    Ingresar
                   </a>
 
                   <a
                     href="#"
                     class="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-aFuerte4 shadow hover:text-aFuerte3 focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
                   >
-                    Learn More
+                    Iniciar
                   </a>
                 </div>
               </div>
@@ -76,14 +75,14 @@ export const Carrousel = () => {
                     href="#"
                     class="block w-full rounded bg-aFuerte4 px-12 py-3 text-sm font-medium text-white shadow hover:bg-aFuerte3 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
                   >
-                    Get Started
+                    Ingresar
                   </a>
 
                   <a
                     href="#"
                     class="block w-full rounded bg-white px-12 py-3 text-sm font-medium  text-aFuerte4 shadow hover:text-aFuerte3 focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
                   >
-                    Learn More
+                    Iniciar
                   </a>
                 </div>
               </div>
@@ -116,14 +115,14 @@ export const Carrousel = () => {
                     href="#"
                     class="block w-full rounded bg-aFuerte4 px-12 py-3 text-sm font-medium text-white shadow hover:bg-aFuerte3 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
                   >
-                    Get Started
+                    Ingresar
                   </a>
 
                   <a
                     href="#"
                     class="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-aFuerte4 shadow hover:text-aFuerte3  focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
                   >
-                    Learn More
+                    Iniciar
                   </a>
                 </div>
               </div>
