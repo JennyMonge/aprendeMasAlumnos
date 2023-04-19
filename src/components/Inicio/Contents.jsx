@@ -15,20 +15,17 @@ function Contents() {
             </div>
 
             <div class="lg:py-24">
-              <h2 class="text-3xl font-bold sm:text-4xl">Grow your audience</h2>
+              <h2 class="text-3xl font-bold sm:text-4xl">Ventajas </h2>
 
               <p class="mt-4 text-gray-600">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut
-                qui hic atque tenetur quis eius quos ea neque sunt, accusantium
-                soluta minus veniam tempora deserunt? Molestiae eius quidem quam
-                repellat.
+              De las principales ventajas del uso de esta página es que sin duda alguna permite al estudiante a repasar los principales tópicos que se desarrollan mediante todo el año lectivo, ayudando al alumno a tener un objetivo más concreto por unidad repasada, reforzando y conociendo los principales temas a mejorar y viendo así su área de oportunidades.
               </p>
 
               <a
                 href="#"
                 class="mt-8 inline-block rounded bg-indigo-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400"
               >
-                Get Started Today
+                saber mas 
               </a>
             </div>
           </div>

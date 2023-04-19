@@ -22,7 +22,7 @@ export const Carrousel = () => {
                 <h1 class="text-3xl text-aFuerte font-extrabold sm:text-5xl">
                 Permítanos mostrarle lo maravilloso
                   <strong class="block font-extrabold text-amber-500">
-                  que puede ser el aprendizaje
+                  Que es el aprendizaje
                   </strong>
                 </h1>
 

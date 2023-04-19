@@ -28,20 +28,19 @@ function Cards() {
                 <div class="p-6 hover:bg-indigo-700 hover:text-white transition duration-300 ease-in text-center">
                   <h1 class="text-2xl font-semibold mb-3"> Materia de Tercer ciclo</h1>
                   <p class="leading-relaxed mb-3 text-bCasi">
-                  * Ciencia : 
-                  Son cuestionario que ayudan a los estudiantes a repasar los contenido.
+                  * Ciencia, Salud y Medio Ambiente 
                   </p>
                   <p class="leading-relaxed mb-3 text-bCasi">
-                  * Sociales : 
-                  El propósito de motivar la comprensión e interpretación del estudiante .
+                  * Estudios Sociales y Cívica 
                   </p>
                   <p class="leading-relaxed mb-3 text-bCasi">
-                  * Ingles  : 
-                  obtendras un mayor conocimiento del idioma ingles .
+                  * Programa de Estudios del Idioma Inglés 
                   </p>
                   <p class="leading-relaxed mb-3 text-bCasi">
-                  * Lenguaje : 
-                  esta desarroda  para las habilidades comunicativas .
+                  * Lenguaje y Literatura 
+                  </p>
+                  <p class="leading-relaxed mb-3 text-bCasi">
+                  * Matematicas
                   </p>
                 </div>
               </div>
@@ -54,12 +53,9 @@ function Cards() {
                   class="lg:b-72 md:h-48 w-full object-cover object-center"
                 />
                 <div class="p-6 hover:bg-indigo-700 hover:text-white transition duration-300 ease-in text-center">
-                  <h1 class="text-2xl font-semibold mb-3">texto impornta</h1>
+                  <h1 class="text-2xl font-semibold mb-3">frases motivadora </h1>
                   <p class="leading-relaxed mb-3  text-bCasi">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quos, libero quisquam. Aliquam consequatur itaque cupiditate
-                    explicabo sequi. Minus neque, illo commodi ipsa sit unde
-                    nulla eveniet excepturi blanditiis, officiis porro?
+                  Cree en ti mismo y en lo que eres. Se consciente de que hay algo en tu interior que es más grande que cualquier obstáculo que la vida te ponga ,tu siempre muestra que tu puede con cualquier cosa .
                   </p>
                 </div>
               </div>
@@ -72,12 +68,24 @@ function Cards() {
                   class="lg:b-72 md:h-48 w-full object-cover object-center"
                 />
                 <div class="p-6 hover:bg-indigo-700 hover:text-white transition duration-300 ease-in">
-                  <h1 class="text-2xl font-semibold mb-3">texto impornta</h1>
+                  <h1 class="text-2xl font-semibold mb-3">Materia de Bachillerato</h1>
                   <p class="leading-relaxed mb-3  text-bCasi">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quos, libero quisquam. Aliquam consequatur itaque cupiditate
-                    explicabo sequi. Minus neque, illo commodi ipsa sit unde
-                    nulla eveniet excepturi blanditiis, officiis porro?
+                  * Ciencias Naturales 
+                  </p>
+                  <p class="leading-relaxed mb-3  text-bCasi">
+                  * Estudios Sociales y Cívica 
+                  </p>
+                  <p class="leading-relaxed mb-3  text-bCasi">
+                  * Informática
+                  </p>
+                  <p class="leading-relaxed mb-3  text-bCasi">
+                  * Ciencias Naturales 
+                  </p>
+                  <p class="leading-relaxed mb-3  text-bCasi">
+                  * Ciencias Naturales 
+                  </p>
+                  <p class="leading-relaxed mb-3  text-bCasi">
+                  * Ciencias Naturales 
                   </p>
                 </div>
               </div>
