@@ -9,7 +9,7 @@ function Cards() {
         <div class="flex flex-col justify-center  my-10 w-[90%] space-y-28 lg:space-y-24 max-w-7xl">
           <div class="flex flex-col justify-center items-center ">
             <div class="text-xl md:text-3xl text-amber-500 font-bold uppercase ">
-              texto importante aqui
+            Materia  de Tercer ciclo hasta Bachillerato
             </div>
             <div class="border-b-4 border-amber-500  -mt-2">
               {" "}
@@ -26,12 +26,22 @@ function Cards() {
                   class="lg:b-72 md:h-48 w-full object-cover object-center"
                 />
                 <div class="p-6 hover:bg-indigo-700 hover:text-white transition duration-300 ease-in text-center">
-                  <h1 class="text-2xl font-semibold mb-3">texto impornta</h1>
+                  <h1 class="text-2xl font-semibold mb-3"> Materia de Tercer ciclo</h1>
                   <p class="leading-relaxed mb-3 text-bCasi">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quos, libero quisquam. Aliquam consequatur itaque cupiditate
-                    explicabo sequi. Minus neque, illo commodi ipsa sit unde
-                    nulla eveniet excepturi blanditiis, officiis porro?
+                  * Ciencia : 
+                  Son cuestionario que ayudan a los estudiantes a repasar los contenido.
+                  </p>
+                  <p class="leading-relaxed mb-3 text-bCasi">
+                  * Sociales : 
+                  El propósito de motivar la comprensión e interpretación del estudiante .
+                  </p>
+                  <p class="leading-relaxed mb-3 text-bCasi">
+                  * Ingles  : 
+                  obtendras un mayor conocimiento del idioma ingles .
+                  </p>
+                  <p class="leading-relaxed mb-3 text-bCasi">
+                  * Lenguaje : 
+                  esta desarroda  para las habilidades comunicativas .
                   </p>
                 </div>
               </div>

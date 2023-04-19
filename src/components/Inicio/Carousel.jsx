@@ -20,15 +20,14 @@ export const Carrousel = () => {
             <div class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
               <div class="max-w-xl text-center sm:text-left">
                 <h1 class="text-3xl text-aFuerte font-extrabold sm:text-5xl">
-                  Let us find your
+                Permítanos mostrarle lo maravilloso
                   <strong class="block font-extrabold text-amber-500">
-                    Forever Home.
+                  que puede ser el aprendizaje
                   </strong>
                 </h1>
 
                 <p class="mt-4 max-w-lg sm:text-xl sm:leading-relaxed">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Nesciunt illo tenetur fuga ducimus numquam ea!
+                Esta es una aplicación donde los estudiantes pueden aprender correctamente.
                 </p>
 
                 <div class="mt-8 flex flex-wrap gap-4 text-center">
@@ -36,14 +35,14 @@ export const Carrousel = () => {
                     href="#"
                     class="block w-full rounded bg-aFuerte4 px-12 py-3 text-sm font-medium text-white shadow hover:bg-aFuerte3 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
                   >
-                    Get Started
+                    Ingresar
                   </a>
 
                   <a
                     href="#"
                     class="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-aFuerte4 shadow hover:text-aFuerte3 focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
                   >
-                    Learn More
+                    Inicio
                   </a>
                 </div>
               </div>
@@ -60,15 +59,14 @@ export const Carrousel = () => {
             <div class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
               <div class="max-w-xl text-center sm:text-left">
                 <h1 class="text-3xl text-aFuerte font-extrabold sm:text-5xl">
-                  Let us find your
+                Siempre aprende algo nuevo
                   <strong class="block font-extrabold text-amber-500">
-                    Forever Home.
+                  cada dia 
                   </strong>
                 </h1>
 
                 <p class="mt-4 max-w-lg sm:text-xl sm:leading-relaxed">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Nesciunt illo tenetur fuga ducimus numquam ea!
+                 aqui puedes encontrar contenido  de tercer ciclo hasta bachillerato.
                 </p>
 
                 <div class="mt-8 flex flex-wrap gap-4 text-center">
@@ -76,14 +74,14 @@ export const Carrousel = () => {
                     href="#"
                     class="block w-full rounded bg-aFuerte4 px-12 py-3 text-sm font-medium text-white shadow hover:bg-aFuerte3 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
                   >
-                    Get Started
+                    empezar 
                   </a>
 
                   <a
                     href="#"
                     class="block w-full rounded bg-white px-12 py-3 text-sm font-medium  text-aFuerte4 shadow hover:text-aFuerte3 focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
                   >
-                    Learn More
+                    aprender mas
                   </a>
                 </div>
               </div>
@@ -100,15 +98,14 @@ export const Carrousel = () => {
             <div class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
               <div class="max-w-xl text-center sm:text-left">
                 <h1 class="text-3xl text-aFuerte font-extrabold sm:text-5xl">
-                  Let us find your
+                El verdadero fracaso
                   <strong class="block font-extrabold text-amber-500">
-                    Forever Home.
+                  es no intentarlo.
                   </strong>
                 </h1>
 
                 <p class="mt-4 max-w-lg sm:text-xl sm:leading-relaxed">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Nesciunt illo tenetur fuga ducimus numquam ea!
+                la aplicacion sirve para que los estudiantes pueda sobre salir en su estudio educativo .
                 </p>
 
                 <div class="mt-8 flex flex-wrap gap-4 text-center">
@@ -116,14 +113,14 @@ export const Carrousel = () => {
                     href="#"
                     class="block w-full rounded bg-aFuerte4 px-12 py-3 text-sm font-medium text-white shadow hover:bg-aFuerte3 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
                   >
-                    Get Started
+                  Ingresar 
                   </a>
 
                   <a
                     href="#"
                     class="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-aFuerte4 shadow hover:text-aFuerte3  focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
                   >
-                    Learn More
+                    Aprender mas
                   </a>
                 </div>
               </div>
