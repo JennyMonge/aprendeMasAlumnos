@@ -9,7 +9,7 @@ function Cards() {
         <div class="flex flex-col justify-center  my-10 w-[90%] space-y-28 lg:space-y-24 max-w-7xl">
           <div class="flex flex-col justify-center items-center ">
             <div class="text-xl md:text-3xl text-amber-500 font-bold uppercase ">
-              texto importante aqui
+              Testimonio
             </div>
             <div class="border-b-4 border-amber-500  -mt-2">
               {" "}
