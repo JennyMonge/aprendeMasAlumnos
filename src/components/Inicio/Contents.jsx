@@ -49,22 +49,18 @@ function Contents() {
 
               <div class="p-8 sm:p-16 lg:p-24">
                 <h2 class="text-2xl font-bold sm:text-3xl">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Tempore, debitis.
+                  ¿para que sirve la app?
                 </h2>
 
                 <p class="mt-4 text-gray-600">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Aliquid, molestiae! Quidem est esse numquam odio deleniti,
-                  beatae, magni dolores provident quaerat totam eos, aperiam
-                  architecto eius quis quibusdam fugiat dicta.
+                Es útil para que el estudiante comprenda los conocimientos de la materia que le brinda el docente, a través de este le hará una serie de preguntas para determinar si el estudiante entiende la materia o si necesita repasarla, y al completarla le hará algunas preguntas. 
                 </p>
 
                 <a
                   href="#"
                   class="mt-8 inline-block rounded border border-indigo-600 bg-indigo-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
                 >
-                  Get in Touch
+                  aprender mas
                 </a>
               </div>
             </div>
@@ -83,20 +79,17 @@ function Contents() {
             </div>
 
             <div class="lg:py-24">
-              <h2 class="text-3xl font-bold sm:text-4xl">Grow your audience</h2>
+              <h2 class="text-3xl font-bold sm:text-4xl">¿Que es QuestionsApps?</h2>
 
               <p class="mt-4 text-gray-600">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut
-                qui hic atque tenetur quis eius quos ea neque sunt, accusantium
-                soluta minus veniam tempora deserunt? Molestiae eius quidem quam
-                repellat.
+              Una aplicación que educa a los estudiantes a través de sus conocimientos y logros en cada materia que han tomado y completado y ayuda a los maestros a evaluar a los estudiantes a través del contenido subido.
               </p>
 
               <a
                 href="#"
                 class="mt-8 inline-block rounded bg-indigo-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400"
               >
-                Get Started Today
+                aprender mas 
               </a>
             </div>
           </div>
@@ -105,12 +98,14 @@ function Contents() {
       <div class="bg-aFuerte text-gray-100 body-font">
         <div class="container px-5 py-24 mx-auto">
           <div class="flex flex-col text-center w-full mb-20">
-            <h2 class="text-xs text-blue-500 tracking-widest font-medium title-font mb-1">ROOF PARTY POLAROID</h2>
-            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-aFuerte3">Master Cleanse Reliac Heirloom</h1>
-            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.</p>
+            <h2 class="text-xs text-blue-500 tracking-widest font-medium title-font mb-1">Tipos de pregunta  sobre de la app</h2>
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-aFuerte3">Para que se utiliza la app</h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+Esta aplicación es utilizada principalmente por estudiantes y profesores. Para los estudiantes, es una herramienta para aprender de la manera correcta y ser recompensados por sus esfuerzos, y para los profesores, ayuda a los estudiantes a que tenga un aprendizaje correcto y calificar contenido.
+</p>
           </div>
           
-          <button class="flex mx-auto mt-16 text-white bg-blue-500 border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded text-lg hover:shadow-lg hover:transform hover:scale-105 duration-500 ease-in-out">Button</button>
+          <button class="flex mx-auto mt-16 text-white bg-blue-500 border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded text-lg hover:shadow-lg hover:transform hover:scale-105 duration-500 ease-in-out">iniciar </button>
         </div>
       </div>
     </div>
