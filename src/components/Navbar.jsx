@@ -1,9 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { AiOutlineMenu} from 'react-icons/ai'
-
+import Cookies from 'universal-cookie';
 function Navbar() {
     
+  const cookies = new Cookies();
+
+  const token = cookies.get('tokenMyApp');
+
+
     return (
       <nav class="bg-aFuerte w-full shadow z-10 h-24">
       <div class="container m-auto flex justify-between items-center text-cyan-600">
@@ -13,6 +18,9 @@ function Navbar() {
               <Link to="/nosotros" class="hover:text-gray-500 py-4 px-6">Nosotros</Link>
               <Link to="/servicios" class="hover:text-gray-500 py-4 px-6">Servicios</Link>
               <Link to="/contactos" class="hover:text-gray-500 py-4 px-6">Contactos</Link>
+              
+              
+
               <Link to="/login" type="button" href="login.html" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"> Login</Link>
               <Link to="/registro" type="button" href="registro.html" class="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700" >  Registrarse</Link>
           </ul>

@@ -76,12 +76,12 @@ function Perfil() {
             Sesiones del Navegador
           </a>
           <div class="mt-4 border-t-2 border-gray-100 pt-4">
-            <a
-              href="#!"
+            <Link
+              to="/calificaciones"
               class="underline mt-4 decoration-transparent text-blue-600 font-semibold transition duration-300 ease-in-out hover:decoration-inherit"
             >
               Resumen de Calificaciones
-            </a>
+            </Link>
           </div>
         </div>
         <div

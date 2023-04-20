@@ -1,8 +1,23 @@
 import React from "react";
+import Cookies from 'universal-cookie';
 
 
 
 function Nav() {
+
+  const cookies = new Cookies();
+
+
+  const CerrarSession = () =>{
+
+
+    cookies.remove("tokenMyApp")
+
+    setTimeout(() => {
+      window.location.href = "http://localhost:3001/login";
+    }, 1500);
+  }
+
   return (
     <div className="w-full">
  <nav
@@ -55,7 +70,7 @@ function Nav() {
             </li>
             <li>
               <a
-                to="/loginA"
+                onClick={CerrarSession}
                 class="block w-full whitespace-nowrap bg-transparent py-2 px-8 text-sm font-normal text-neutral-700 hover:bg-sky-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400"
                 data-te-dropdown-item-ref
               >

@@ -1,0 +1,105 @@
+
+  
+  .app {
+    background-color: #252d4a;
+    max-width: 650px;
+    min-width: 450px;
+    height: min-content;
+    min-height: 200px;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  /* PREGUNTAS */
+ .app .lado-izquierdo {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+.app  .pregunta-numero {
+    margin-bottom: 20px;
+  }
+  
+ .app .pregunta-numero span {
+    font-size: 28px;
+  }
+  
+ .app .pregunta-titulo {
+    margin-bottom: 12px;
+  }
+  
+ .app .lado-derecho {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  /* FINALIZADO */
+ .app .juego-terminado {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 24px;
+    align-items: center;
+  }
+  
+  /* GRAL */
+ .app button {
+    width: 100%;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #252d4a;
+    border-radius: 15px;
+    display: flex;
+    padding: 5px;
+    justify-content: flex-start;
+    align-items: center;
+    border: 5px solid #234668;
+    cursor: pointer;
+  }
+  
+ .app .tiempo-restante {
+    font-size: 14px;
+    color: #fcbf3d;
+    margin-bottom: 20px;
+  }
+  
+  .correct,
+ .app .correct:hover {
+    background-color: #2f922f;
+  }
+  
+  .incorrect,
+ .app .incorrect:hover {
+    background-color: #ff3333;
+  }
+  
+ .app .btns-container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+ .app button:hover {
+    background-color: #234668;
+  }
+  
+.app  button[disabled] {
+    background-color: #555e7d;
+    color: #ffffff;
+    cursor: not-allowed;
+  }
+  
+ .app button:focus {
+    outline: none;
+  }
+  
+ .app button svg {
+    margin-right: 5px;
+  }
