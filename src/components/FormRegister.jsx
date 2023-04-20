@@ -1,7 +1,13 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-function FormRegister() {
+import axios from "axios";
+import Swal from "sweetalert2";
+import { useNavigate } from "react-router-dom";
+
+import Cookies from 'universal-cookie';
  
+function FormRegister() {
+  const Navigate = useNavigate();
     //Estado inicial de formulario
     const datosFormulario = {
       nombreRegistro: "",
@@ -51,11 +57,73 @@ const handleRegistro = (e) => {
   ((estado) => {return false});
   console.log("Total de validaciones:", totalValidaciones.length);
   //validacion para enviar los datos al servidor
-  if(totalValidaciones.length >= 1){
-    console.log("Enviar al servidor");
+  if(totalValidaciones.length >= 5){
+    EnviarDatosServe();
   }
 }
 
+async function EnviarDatosServe(){
+  const url = "http://localhost:8000/api/auth/registro1";
+  const infoInputs = {
+    nombre_registro: formulario.nombreRegistro,
+    apellido_registro: formulario.apellidoRegistro,
+    nie: formulario.nieRegistro,
+    email: formulario.emailRegistro,
+    password: formulario.contraRegistro,
+    password_confirmed: formulario.reContraRegistro
+  };
+
+  let config = {
+    headers: {
+      'Content-Type':'application/json',
+      'Accept':'application/json',
+    }
+  }
+  try {
+    const resp = await axios.post(url, infoInputs, config);
+    console.log(resp);
+
+
+
+    const Toast = Swal.mixin({
+      toast: true,
+      position: 'top-end',
+      showConfirmButton: false,
+      timer: 3000,
+      timerProgressBar: true,
+      didOpen: (toast) => {
+        toast.addEventListener('mouseenter', Swal.stopTimer)
+        toast.addEventListener('mouseleave', Swal.resumeTimer)
+      }
+    })
+    
+    Toast.fire({
+      icon: 'success',
+      title: 'se ha registrado con exito'
+    })
+    setTimeout(() => {
+      Navigate("/login");
+    }, 2000);
+  }catch(err){
+    console.error(err);
+    const Toast = Swal.mixin({
+      toast: true,
+      position: 'top-end',
+      showConfirmButton: false,
+      timer: 3000,
+      timerProgressBar: true,
+      didOpen: (toast) => {
+        toast.addEventListener('mouseenter', Swal.stopTimer)
+        toast.addEventListener('mouseleave', Swal.resumeTimer)
+      }
+    })
+    
+    Toast.fire({
+      icon: 'error',
+      title: 'ha ocurrido un error intente de nuevo'
+    })
+  }
+}
 const validarInputs = (data) => {
   console.log(data);
   //declaramos un arreglo el cual se va a encargar de guardar las validaciones

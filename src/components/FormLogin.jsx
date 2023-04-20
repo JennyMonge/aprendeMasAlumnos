@@ -1,6 +1,19 @@
+import axios from "axios";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Swal from "sweetalert2";
+import { useNavigate } from "react-router-dom";
+
+import Cookies from 'universal-cookie';
+
 function FormLogin() {
+
+  
+  const cookies = new Cookies();
+
+
+
+  const Navigate = useNavigate();
   const datosForm = {
     nieLogin: "",
     contraLogin: ""
@@ -37,10 +50,77 @@ function FormLogin() {
      ((estado) => {return false});
      console.log("Total de validaciones", totalValidaciones.length);
      //validacion para enviar datos al servidor
-     if(totalValidaciones.length >= 1){
-      console.log("Enviar al servidor");
+     if(totalValidaciones.length >= 2){
+        EnviarDatosServe();
      }
   }
+
+  async function EnviarDatosServe() {
+    const url = "http://localhost:8000/api/auth/iniciar-sesion1";
+
+    const infoInputs = {
+      nie: formulario.nieLogin,
+      password: formulario.contraLogin
+    };
+    let config = {
+      headers: {
+        'Content-Type':'application/json',
+        'Accept':'application/json',
+      }
+    }
+
+    try {
+      const resp = await axios.post(url, infoInputs, config);
+      console.log(resp);
+
+      const token = resp.data.token_acceso;
+      const expires = resp.data.fecha_expiracion;
+      const tipoToken = resp.data.tipo_token;
+
+      cookies.set('tokenMyApp', { token:token, type:tipoToken}, { path: "/",  expires: new Date(expires), secure:true } );
+
+
+      const Toast = Swal.mixin({
+        toast: true,
+        position: 'top-end',
+        showConfirmButton: false,
+        timer: 3000,
+        Navigate: "/dasboard",
+        timerProgressBar: true,
+        didOpen: (toast) => {
+          toast.addEventListener('mouseenter', Swal.stopTimer)
+          toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+      })
+      
+      Toast.fire({
+        icon: 'success',
+        title: 'felicidade has iniciado sesion'
+      })
+      setTimeout(() => {
+         Navigate("/dasboard");
+      }, 2000);
+    }catch(err){
+      console.error(err);
+      const Toast = Swal.mixin({
+        toast: true,
+        position: 'top-end',
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+          toast.addEventListener('mouseenter', Swal.stopTimer)
+          toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+      })
+      
+      Toast.fire({
+        icon: 'error',
+        title: 'Verica tus datos'
+      })
+    }
+  }
+
   const validarInputs = (data) => {
     console.log(data);
     //declaracion del arreglo para guardar las validaciones

@@ -9,7 +9,7 @@ function Cards() {
         <div class="flex flex-col justify-center  my-10 w-[90%] space-y-28 lg:space-y-24 max-w-7xl">
           <div class="flex flex-col justify-center items-center ">
             <div class="text-xl md:text-3xl text-amber-500 font-bold uppercase ">
-              Materias tercer ciclo hasta bachillerato
+            Materia  de Tercer ciclo hasta Bachillerato
             </div>
             <div class="border-b-4 border-amber-500  -mt-2">
               {" "}
@@ -26,18 +26,21 @@ function Cards() {
                   class="lg:b-72 md:h-48 w-full object-cover object-center"
                 />
                 <div class="p-6 hover:bg-indigo-700 hover:text-white transition duration-300 ease-in text-center">
-                  <h1 class="text-2xl font-semibold mb-3">Materias de tercer ciclo</h1>
+                  <h1 class="text-2xl font-semibold mb-3"> Materia de Tercer ciclo</h1>
                   <p class="leading-relaxed mb-3 text-bCasi">
-                  * Ciencia:
-                  Este cuestionario ayuda repasar los contenidos brindado por el orientador.
+                  * Ciencia, Salud y Medio Ambiente 
                   </p>
                   <p class="leading-relaxed mb-3 text-bCasi">
-                  * sociales:
-                  El propósito es motivar al estudiante con esto temas de ámbito social y cultura.
+                  * Estudios Sociales y Cívica 
                   </p>
                   <p class="leading-relaxed mb-3 text-bCasi">
-                  * Inglés  :
-                  Obtendrás un conocimiento del idioma inglés por medio de preguntas.
+                  * Programa de Estudios del Idioma Inglés 
+                  </p>
+                  <p class="leading-relaxed mb-3 text-bCasi">
+                  * Lenguaje y Literatura 
+                  </p>
+                  <p class="leading-relaxed mb-3 text-bCasi">
+                  * Matematicas
                   </p>
                 </div>
               </div>
@@ -50,27 +53,9 @@ function Cards() {
                   class="lg:b-72 md:h-48 w-full object-cover object-center"
                 />
                 <div class="p-6 hover:bg-indigo-700 hover:text-white transition duration-300 ease-in text-center">
-                  <h1 class="text-2xl font-semibold mb-3">Materia de tercer ciclo</h1>
+                  <h1 class="text-2xl font-semibold mb-3">frases motivadora </h1>
                   <p class="leading-relaxed mb-3  text-bCasi">
-                   * Lenguaje y Literatura :
-                  Esta asignatura está orientada al desarrollo de las habilidades comunicativas de la población estudiantil.
-                  </p>
-                  <p class="leading-relaxed mb-3  text-bCasi">
-                   * Matemática:
-                  Con estos cuestionarios, desarrollarás tu pensamiento lógico-matemático
-                  </p>
-                  <h1 class="text-2xl font-semibold mb-3">Materia de Bachillerato</h1>
-                  <p class="leading-relaxed mb-3  text-bCasi">
-                   * Ciencias Naturales :
-                  Conocerás los principios básicos de la electricidad y el magnetismo. 
-                  </p>
-                  <p class="leading-relaxed mb-3  text-bCasi">
-                   * Estudios Sociales y Cívica  :
-                  Esta sección te servirá de apoyo para incrementar tus aprendizajes en el área de estudios sociales.
-                  </p>
-                  <p class="leading-relaxed mb-3  text-bCasi">
-                   * 	Informática  :
-                  Esta sección te servirá de apoyo para incrementar tus aprendizajes en el área de estudios sociales.
+                  Cree en ti mismo y en lo que eres. Se consciente de que hay algo en tu interior que es más grande que cualquier obstáculo que la vida te ponga ,tu siempre muestra que tu puede con cualquier cosa .
                   </p>
                 </div>
               </div>
@@ -85,16 +70,22 @@ function Cards() {
                 <div class="p-6 hover:bg-indigo-700 hover:text-white transition duration-300 ease-in">
                   <h1 class="text-2xl font-semibold mb-3">Materia de Bachillerato</h1>
                   <p class="leading-relaxed mb-3  text-bCasi">
-                   * Programa de Estudios del Idioma Inglés :
-                  Tendrás la oportunidad de mejorar tu comprensión lectora y ampliar tu vocabulario. 
+                  * Ciencias Naturales 
                   </p>
                   <p class="leading-relaxed mb-3  text-bCasi">
-                   * Lenguaje y Literatura :
-                  Por medio de una serie de preguntas de respuestas múltiples, el estudiante hará un refuerzo académico a temáticas como las figuras literarias, medios de comunicación literaria, análisis de textos y normas ortográficas.
+                  * Estudios Sociales y Cívica 
                   </p>
                   <p class="leading-relaxed mb-3  text-bCasi">
-                   * Matemática :
-                  En esta materia, podrás medir tu desempeño con respecto a funciones matemáticas, elementos de álgebra, razones trigonométricas, conjuntos numéricos y elementos de geometría. 
+                  * Informática
+                  </p>
+                  <p class="leading-relaxed mb-3  text-bCasi">
+                  * Ciencias Naturales 
+                  </p>
+                  <p class="leading-relaxed mb-3  text-bCasi">
+                  * Ciencias Naturales 
+                  </p>
+                  <p class="leading-relaxed mb-3  text-bCasi">
+                  * Ciencias Naturales 
                   </p>
                 </div>
               </div>

@@ -7,6 +7,7 @@ const preguntas = [
         {textoRespuesta: "C++", isCorrect: false},
         {textoRespuesta: "Kotilin", isCorrect: false},
     ],
+    puntuacion: 20
 	},
     {
         titulo: "Con Lasfito aprendes de tutoriasles...?",
@@ -16,6 +17,7 @@ const preguntas = [
             {textoRespuesta: "sin gracia++", isCorrect: false},
             {textoRespuesta: "sin codigo", isCorrect: false},
         ],
+        puntuacion: 20
     },
     {
         titulo: "Cuantos es '11' + 1 en javascript?",
@@ -25,6 +27,7 @@ const preguntas = [
             {textoRespuesta: "Syntax error", isCorrect: false},
             {textoRespuesta: "`11`1", isCorrect: false},
         ],
+        puntuacion: 20
     },
     {
         titulo: "En que año fue creado javaScript",
@@ -34,6 +37,7 @@ const preguntas = [
             {textoRespuesta: "1987", isCorrect: false},
             {textoRespuesta: "1995", isCorrect: true},
         ],
+        puntuacion: 20
     },
 
 ];

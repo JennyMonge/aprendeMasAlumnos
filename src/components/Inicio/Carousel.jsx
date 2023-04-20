@@ -20,14 +20,14 @@ export const Carrousel = () => {
             <div class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
               <div class="max-w-xl text-center sm:text-left">
                 <h1 class="text-3xl text-aFuerte font-extrabold sm:text-5xl">
-                Te mostraremos lo maravilloso 
+                Permítanos mostrarle lo maravilloso
                   <strong class="block font-extrabold text-amber-500">
-                  Que es aprender
+                  Que es el aprendizaje
                   </strong>
                 </h1>
 
                 <p class="mt-4 max-w-lg sm:text-xl sm:leading-relaxed">
-                Es una aplicación donde puedes encontrar asignaturas desde tercer ciclo hasta bachillerato, donde se prueba tu nivel de conocimiento con un cuestionario, al completar cada nivel se te premia con una nota por completarlo.
+                Esta es una aplicación donde los estudiantes pueden aprender correctamente.
                 </p>
 
                 <div class="mt-8 flex flex-wrap gap-4 text-center">
@@ -42,7 +42,7 @@ export const Carrousel = () => {
                     href="#"
                     class="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-aFuerte4 shadow hover:text-aFuerte3 focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
                   >
-                    Iniciar
+                    Inicio
                   </a>
                 </div>
               </div>
@@ -59,15 +59,14 @@ export const Carrousel = () => {
             <div class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
               <div class="max-w-xl text-center sm:text-left">
                 <h1 class="text-3xl text-aFuerte font-extrabold sm:text-5xl">
-                Te mostraremos lo maravilloso 
+                Siempre aprende algo nuevo
                   <strong class="block font-extrabold text-amber-500">
-                  Que es aprender
+                  cada dia 
                   </strong>
                 </h1>
 
                 <p class="mt-4 max-w-lg sm:text-xl sm:leading-relaxed">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Nesciunt illo tenetur fuga ducimus numquam ea!
+                 aqui puedes encontrar contenido  de tercer ciclo hasta bachillerato.
                 </p>
 
                 <div class="mt-8 flex flex-wrap gap-4 text-center">
@@ -75,14 +74,14 @@ export const Carrousel = () => {
                     href="#"
                     class="block w-full rounded bg-aFuerte4 px-12 py-3 text-sm font-medium text-white shadow hover:bg-aFuerte3 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
                   >
-                    Ingresar
+                    empezar 
                   </a>
 
                   <a
                     href="#"
                     class="block w-full rounded bg-white px-12 py-3 text-sm font-medium  text-aFuerte4 shadow hover:text-aFuerte3 focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
                   >
-                    Iniciar
+                    aprender mas
                   </a>
                 </div>
               </div>
@@ -99,15 +98,14 @@ export const Carrousel = () => {
             <div class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
               <div class="max-w-xl text-center sm:text-left">
                 <h1 class="text-3xl text-aFuerte font-extrabold sm:text-5xl">
-                Te mostraremos lo maravilloso
+                El verdadero fracaso
                   <strong class="block font-extrabold text-amber-500">
-                  Que es aprender
+                  es no intentarlo.
                   </strong>
                 </h1>
 
                 <p class="mt-4 max-w-lg sm:text-xl sm:leading-relaxed">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Nesciunt illo tenetur fuga ducimus numquam ea!
+                la aplicacion sirve para que los estudiantes pueda sobre salir en su estudio educativo .
                 </p>
 
                 <div class="mt-8 flex flex-wrap gap-4 text-center">
@@ -115,14 +113,14 @@ export const Carrousel = () => {
                     href="#"
                     class="block w-full rounded bg-aFuerte4 px-12 py-3 text-sm font-medium text-white shadow hover:bg-aFuerte3 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
                   >
-                    Ingresar
+                  Ingresar 
                   </a>
 
                   <a
                     href="#"
                     class="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-aFuerte4 shadow hover:text-aFuerte3  focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
                   >
-                    Iniciar
+                    Aprender mas
                   </a>
                 </div>
               </div>
