@@ -9,7 +9,7 @@ function Contents() {
             <div class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
               <img
                 alt="Party"
-                src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                src="https://unedmadrid.es/wp-content/uploads/2019/12/estudiantes.jpg"
                 class="absolute inset-0 h-full w-full object-cover" 
               />
             </div>
@@ -38,7 +38,7 @@ function Contents() {
               <div class="relative h-64 sm:h-80 lg:h-full">
                 <img
                   alt="House"
-                  src="https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                  src="https://academia.unad.edu.co/images/2020/red-de-estudiantes/red-de-estudiantes-2.jpg"
                   class="absolute inset-0 h-full w-full object-cover"
                 />
               </div>
@@ -73,7 +73,7 @@ function Contents() {
             <div class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
               <img
                 alt="Party"
-                src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                src="https://imagenes.elpais.com/resizer/9feF5YapQWz2N5tf4eHnkIvvmEc=/414x0/cloudfront-eu-central-1.images.arcpublishing.com/prisa/S3WRYFIV2QNEZFG6ND5G7XYOWM.jpg"
                 class="absolute inset-0 h-full w-full object-cover"
               />
             </div>
