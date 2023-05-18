@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 function Materia() {
   return (
-    <div className="flex">
+    <div className="flex"> 
       <Aside />
       <div className="w-full">
         <Nav />
